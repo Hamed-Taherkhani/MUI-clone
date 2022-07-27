@@ -6,7 +6,7 @@ import {
   OUTLINED_GITHUB,
   OUTLINED_LIGHT,
   OUTLINED_SEARCH,
-} from "../Assets/svg";
+} from "./../Assets/svg";
 import {
   Button,
   Accordion,

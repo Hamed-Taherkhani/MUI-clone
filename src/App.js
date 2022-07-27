@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Components/Header";
+import Header from "./Layouts/Header";
 import "./normalize.css";
 import "./App.css";
 
