@@ -1,0 +1,40 @@
+:root {
+  --main-color: #001e3c;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: var(--main-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.lr-padding {
+  padding: 0 1rem;
+}
+
+.glass {
+  background-color: #071a2f66;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-bottom: 1px solid #ffffff1e;
+}

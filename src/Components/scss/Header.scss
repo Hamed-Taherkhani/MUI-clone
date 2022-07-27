@@ -1,0 +1,44 @@
+.header__ {
+  height: 55px;
+  position: sticky;
+  top: 0;
+
+  .top {
+    height: 100%;
+    border-bottom: #ffffff08 1px solid;
+
+    .right {
+      display: inherit;
+      gap: 10px;
+    }
+  }
+
+  .menu-container {
+    .menu-items-list {
+      overflow: auto;
+      max-height: calc(100vh - 55px);
+      background-color: #0a1929;
+
+      .item,
+      .item .MuiAccordion-root {
+        background-color: transparent;
+        color: #fff;
+        box-shadow: none;
+        min-height: 48px;
+      }
+
+      .item .MuiAccordion-root {
+        .MuiAccordionDetails-root {
+          margin-left: 20px;
+          border-left: #3399ff31 solid 1px;
+
+          .text {
+            color: #ffffffab;
+            font-size: 0.9rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
