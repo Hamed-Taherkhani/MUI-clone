@@ -1,0 +1,63 @@
+.root-main {
+  .introduction {
+    padding: 0 1rem;
+    height: calc(100vh - 55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+      max-width: 500px;
+
+      .text {
+        margin-bottom: 1rem;
+
+        h1 {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .get-started {
+        gap: 20px;
+        flex-direction: column;
+
+        .get-started-btn {
+          white-space: nowrap;
+          padding: 1rem 2rem;
+          border-radius: 10px;
+        }
+
+        .copy-npm-start-btn {
+          border: 1px solid #3399ff;
+          background-color: #3399ff1e;
+          border-radius: 10px;
+          padding: 1rem;
+
+          .MuiTypography-root {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+
+  .famous-company-used-mui {
+    padding: 0 1rem 2rem;
+
+    .list {
+      gap: 20px;
+
+      .item {
+        width: 40%;
+      }
+    }
+
+    .text {
+      margin-top: 2rem;
+    }
+  }
+}

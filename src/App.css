@@ -5,10 +5,15 @@
 .App {
   min-height: 100vh;
   background-color: var(--main-color);
+  color: #fff;
 }
 
 .flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-column {

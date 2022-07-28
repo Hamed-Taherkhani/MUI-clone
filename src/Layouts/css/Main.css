@@ -1,0 +1,50 @@
+.root-main .introduction {
+  padding: 0 1rem;
+  height: calc(100vh - 55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root-main .introduction .container {
+  max-width: 500px;
+}
+.root-main .introduction .container .text {
+  margin-bottom: 1rem;
+}
+.root-main .introduction .container .text h1 {
+  margin-bottom: 1rem;
+}
+.root-main .introduction .container .get-started {
+  gap: 20px;
+  flex-direction: column;
+}
+.root-main .introduction .container .get-started .get-started-btn {
+  white-space: nowrap;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+.root-main .introduction .container .get-started .copy-npm-start-btn {
+  border: 1px solid #3399ff;
+  background-color: rgba(51, 153, 255, 0.1176470588);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.root-main .introduction .container .get-started .copy-npm-start-btn .MuiTypography-root {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.root-main .famous-company-used-mui {
+  padding: 0 1rem 2rem;
+}
+.root-main .famous-company-used-mui .list {
+  gap: 20px;
+}
+.root-main .famous-company-used-mui .list .item {
+  width: 40%;
+}
+.root-main .famous-company-used-mui .text {
+  margin-top: 2rem;
+}/*# sourceMappingURL=Main.css.map */
