@@ -11,12 +11,14 @@ import {
 } from "../Assets/svg";
 import { Typography, Button } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import BlocksList from "../Components/BlocksList";
 
 function Main() {
   return (
     <div className="root-main">
       <Introduction />
       <FamousCompany />
+      <BlocksList />
     </div>
   );
 }
