@@ -37,7 +37,7 @@ function MUIFeatures() {
     >
       {cardsInfo.map(({ icon, title, body }, i) => (
         <ListItem disablePadding key={i}>
-          <Card title={title} body={body} icon={icon} />
+          <Card title={title} body={body} endIcon={icon} />
         </ListItem>
       ))}
     </List>

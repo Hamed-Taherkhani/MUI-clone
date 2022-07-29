@@ -1,6 +1,7 @@
 import React from "react";
 import Block from "./Block";
 import MUIFeatures from "./MUIFeatures";
+import Sponsors from "./Sponsors";
 
 function BlocksList() {
   return (
@@ -43,7 +44,9 @@ function BlocksList() {
         }
         summary="The development of these open-source tools is accelerated by out generous sponsors."
         bg="#001e3c"
-      ></Block>
+      >
+        <Sponsors />
+      </Block>
       <Block
         title="Start now"
         description={

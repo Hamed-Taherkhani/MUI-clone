@@ -1,12 +1,16 @@
 import React from "react";
-import { Paper, Typography } from "@mui/material";
+import { Paper, Typography, Box } from "@mui/material";
+import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
 
-function Card({ icon, title, body }) {
+function Card({ title, body, startIcon, endIcon, logo, isLink }) {
   return (
     <Paper
       className="Card-root"
       variant="outlined"
       sx={{
+        display: "flex",
+        gap: 2,
+        width: "100%",
         border: "1px solid rgb(51 153 255 / 19%)",
         backgroundColor: "rgb(19, 47, 76)",
         color: "inherit",
@@ -14,14 +18,43 @@ function Card({ icon, title, body }) {
         borderRadius: 3,
       }}
     >
-      <div className="title">
-        <span className="icon">{icon}</span>
-        <Typography fontWeight="500">{title}</Typography>
-      </div>
+      {logo && (
+        <Box
+          className="left"
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            style={{
+              width: "50px",
+              height: "auto",
+            }}
+            src={logo}
+            alt={title}
+          />
+        </Box>
+      )}
 
-      <Typography marginTop="0.5rem" color="#b2bac2" fontSize="0.9rem">
-        {body}
-      </Typography>
+      <div className="right">
+        <Box className="title" sx={{ display: "flex", gap: 1 }}>
+          {startIcon && <span className="icon">{startIcon}</span>}
+          <Typography fontWeight="500">{title}</Typography>
+          {isLink && (
+            <span className="icon">
+              <LaunchRoundedIcon
+                sx={{ fill: "rgb(51, 153, 255)", width: "17px" }}
+              />
+            </span>
+          )}
+        </Box>
+
+        <Typography marginTop="0.5rem" color="#b2bac2" fontSize="0.9rem">
+          {body}
+        </Typography>
+      </div>
     </Paper>
   );
 }
