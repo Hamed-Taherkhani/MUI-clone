@@ -2,6 +2,7 @@ import React from "react";
 import Block from "./Block";
 import MUIFeatures from "./MUIFeatures";
 import Sponsors from "./Sponsors";
+import PeopleComments from "./PeopleComments";
 
 function BlocksList() {
   return (
@@ -35,6 +36,9 @@ function BlocksList() {
         }
         bg="#001e3c"
       ></Block>
+      <Block bg="#132f4c">
+        <PeopleComments />
+      </Block>
       <Block
         title="Sponsors"
         description={
