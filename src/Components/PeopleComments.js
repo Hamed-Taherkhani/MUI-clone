@@ -141,10 +141,13 @@ const Comments = () => {
         </Box>
 
         <Tabs
-          indicatorColor="transparent"
           value={value}
           onChange={handleChange}
           sx={{
+            ".MuiTabs-indicator": {
+              backgroundColor: "transparent",
+            },
+
             button: {
               padding: 0,
               width: "20px",
@@ -195,6 +198,7 @@ const Comments = () => {
 
       {comments.map(({ text, avatar, name, job, logo }, i) => (
         <TabPanel
+          key={i}
           value={value}
           index={i}
           text={text}
