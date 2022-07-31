@@ -3,6 +3,7 @@ import Block from "./Block";
 import MUIFeatures from "./MUIFeatures";
 import Sponsors from "./Sponsors";
 import PeopleComments from "./PeopleComments";
+import StartNow from "./StartNow";
 
 function BlocksList() {
   const blockData = [
@@ -60,6 +61,7 @@ function BlocksList() {
       ),
       summary:
         "Find out why MUI's tools are trusted by thousands of open source developers and teams around the world.",
+      children: <StartNow />,
     },
   ];
 

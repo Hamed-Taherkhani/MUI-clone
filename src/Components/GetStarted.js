@@ -14,7 +14,7 @@ import DoneRoundedIcon from "@mui/icons-material/DoneRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import { useState } from "react";
 
-function GetStarted() {
+function GetStarted({ sx }) {
   const [isCopied, setIsCopied] = useState(false);
   const [isSnackOpen, setIsSnackOpen] = useState(false);
 
@@ -39,7 +39,7 @@ function GetStarted() {
       display="flex"
       flexDirection="column"
       gap={1}
-      sx={{ Button: { textTransform: "none", color: "#fff" } }}
+      sx={{ ...sx, Button: { textTransform: "none", color: "#fff" } }}
     >
       <Snackbar
         autoHideDuration={6000}

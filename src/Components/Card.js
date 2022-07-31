@@ -2,11 +2,23 @@ import React from "react";
 import { Paper, Typography, Box } from "@mui/material";
 import LaunchRoundedIcon from "@mui/icons-material/LaunchRounded";
 
-function Card({ title, body, startIcon, endIcon, logo, isLink }) {
+function Card({
+  component,
+  href,
+  title,
+  body,
+  startIcon,
+  endIcon,
+  logo,
+  isLink,
+  children,
+}) {
   return (
     <Paper
       className="Card-root"
       variant="outlined"
+      component={component}
+      href={href}
       sx={{
         display: "flex",
         gap: 2,
@@ -54,6 +66,8 @@ function Card({ title, body, startIcon, endIcon, logo, isLink }) {
         <Typography marginTop="0.5rem" color="#b2bac2" fontSize="0.9rem">
           {body}
         </Typography>
+
+        {children}
       </div>
     </Paper>
   );
