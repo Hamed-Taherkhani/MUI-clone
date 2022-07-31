@@ -3,6 +3,11 @@ import { Box } from "@mui/system";
 import React from "react";
 import LinksList from "../Components/LinksList";
 import { LOGO } from "./../Assets/svg";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
   return (
@@ -10,6 +15,7 @@ function Footer() {
       <Logo />
       <KeepUpToDate />
       <Links />
+      <CopyRightAndSocialMedia />
     </Box>
   );
 }
@@ -187,6 +193,75 @@ const Links = () => {
           sx={{ width: "50%" }}
         />
       ))}
+    </Box>
+  );
+};
+
+const CopyRightAndSocialMedia = () => {
+  const socialMediaLinks = [
+    {
+      icon: <GitHubIcon />,
+      path: "",
+    },
+    {
+      icon: <LinkedInIcon />,
+      path: "",
+    },
+    {
+      icon: <AlternateEmailIcon />,
+      path: "",
+    },
+    {
+      icon: <InstagramIcon />,
+      path: "",
+    },
+    {
+      icon: <TelegramIcon />,
+      path: "",
+    },
+  ];
+
+  return (
+    <Box>
+      <Box component="hr" borderColor="#b2bac230" />
+
+      <Box padding="2rem 0">
+        <Typography color="#b2bac2" fontSize="0.9rem" paddingBottom={2}>
+          Copyright © 2022 Material UI SAS.
+        </Typography>
+
+        <LinksList
+          links={socialMediaLinks}
+          sx={{
+            ul: {
+              display: "flex",
+              alignItems: "flex-start",
+              gap: 3,
+
+              li: {
+                width: "min-content",
+
+                a: {
+                  borderRadius: "50%",
+                  padding: "5px",
+                  transition: "200ms ease",
+
+                  ".MuiSvgIcon-root": {
+                    fill: "#fff",
+                    width: "20px",
+                    height: "20px",
+                  },
+
+                  "&:hover": {
+                    backgroundColor: "#1e49765e",
+                    transform: "scale(0.94)",
+                  },
+                },
+              },
+            },
+          }}
+        />
+      </Box>
     </Box>
   );
 };
