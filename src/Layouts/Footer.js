@@ -1,6 +1,7 @@
-import { Button, Typography } from "@mui/material";
+import { Button, List, ListItem, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import LinksList from "../Components/LinksList";
 import { LOGO } from "./../Assets/svg";
 
 function Footer() {
@@ -8,6 +9,7 @@ function Footer() {
     <Box component="footer" padding="2rem 1rem">
       <Logo />
       <KeepUpToDate />
+      <Links />
     </Box>
   );
 }
@@ -55,6 +57,136 @@ const KeepUpToDate = () => {
           </Button>
         </Box>
       </Box>
+    </Box>
+  );
+};
+
+const Links = () => {
+  const linksList = [
+    {
+      title: "Products",
+      links: [
+        {
+          text: "MUI Core",
+          path: "#",
+        },
+        {
+          text: "MUI X",
+          path: "#",
+        },
+        {
+          text: "Templates",
+          path: "#",
+        },
+        {
+          text: "Design kits",
+          path: "#",
+        },
+      ],
+    },
+    {
+      title: "Resources",
+      links: [
+        {
+          text: "Material Icons",
+          path: "#",
+        },
+        {
+          text: "Free templates",
+          path: "#",
+        },
+        {
+          text: "Components",
+          path: "#",
+        },
+        {
+          text: "Customization",
+          path: "#",
+        },
+        {
+          text: "Theming",
+          path: "#",
+        },
+      ],
+    },
+    {
+      title: "Explore",
+      links: [
+        {
+          text: "Documentation",
+          path: "#",
+        },
+        {
+          text: "Store",
+          path: "#",
+        },
+        {
+          text: "Blog",
+          path: "#",
+        },
+        {
+          text: "Showcase",
+          path: "#",
+        },
+        {
+          text: "Roadmap",
+          path: "#",
+        },
+        {
+          text: "Languages",
+          path: "#",
+        },
+      ],
+    },
+    {
+      title: "Company",
+      links: [
+        {
+          text: "About",
+          path: "#",
+        },
+        {
+          text: "Vision",
+          path: "#",
+        },
+        {
+          text: "Careers",
+          path: "#",
+        },
+        {
+          text: "Support",
+          path: "#",
+        },
+        {
+          text: "Privacy policy",
+          path: "#",
+        },
+        {
+          text: "Contact us",
+          path: "#",
+        },
+      ],
+    },
+  ];
+
+  return (
+    <Box
+      component="ul"
+      padding=" 1rem 0"
+      marginTop={3}
+      display="flex"
+      flexWrap="wrap"
+      rowGap={3}
+    >
+      {linksList.map(({ title, links }, i) => (
+        <LinksList
+          component="li"
+          key={i}
+          title={title}
+          links={links}
+          sx={{ width: "50%" }}
+        />
+      ))}
     </Box>
   );
 };
