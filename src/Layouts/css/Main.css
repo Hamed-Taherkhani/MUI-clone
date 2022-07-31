@@ -14,28 +14,6 @@
 .root-main .introduction .container .text h1 {
   margin-bottom: 1rem;
 }
-.root-main .introduction .container .get-started {
-  gap: 20px;
-  flex-direction: column;
-}
-.root-main .introduction .container .get-started .get-started-btn {
-  white-space: nowrap;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-}
-.root-main .introduction .container .get-started .copy-npm-start-btn {
-  border: 1px solid #3399ff;
-  background-color: rgba(51, 153, 255, 0.1176470588);
-  border-radius: 10px;
-  padding: 1rem;
-}
-.root-main .introduction .container .get-started .copy-npm-start-btn .MuiTypography-root {
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
 .root-main .famous-company-used-mui {
   padding: 0 1rem 2rem;
 }

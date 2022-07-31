@@ -16,32 +16,6 @@
           margin-bottom: 1rem;
         }
       }
-
-      .get-started {
-        gap: 20px;
-        flex-direction: column;
-
-        .get-started-btn {
-          white-space: nowrap;
-          padding: 1rem 2rem;
-          border-radius: 10px;
-        }
-
-        .copy-npm-start-btn {
-          border: 1px solid #3399ff;
-          background-color: #3399ff1e;
-          border-radius: 10px;
-          padding: 1rem;
-
-          .MuiTypography-root {
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-          }
-        }
-      }
     }
   }
 

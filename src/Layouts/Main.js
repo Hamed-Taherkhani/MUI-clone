@@ -5,12 +5,11 @@ import {
   NASA,
   SPOTIFY,
   NETFLIX,
-  OUTLINED_MORE,
   UNITY,
   SHUTTERSTOCK,
 } from "../Assets/svg";
-import { Typography, Button } from "@mui/material";
-import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import { Typography } from "@mui/material";
+import GetStarted from "../Components/GetStarted";
 import BlocksList from "../Components/BlocksList";
 
 function Main() {
@@ -46,26 +45,7 @@ const Introduction = () => (
         </Typography>
       </div>
 
-      <div className="get-started flex">
-        <Button
-          className="get-started-btn"
-          component="a"
-          variant="contained"
-          endIcon={OUTLINED_MORE}
-        >
-          Get started
-        </Button>
-
-        <Button
-          variant="outlined"
-          endIcon={<ContentCopyIcon sx={{ color: "#b2bac2" }} />}
-          className="copy-npm-start-btn"
-        >
-          <Typography color="#b2bac2" fontSize="0.6rem">
-            npm install @mui/material @emotion/react @emotion/styled
-          </Typography>
-        </Button>
-      </div>
+      <GetStarted />
     </div>
   </div>
 );
