@@ -1,14 +1,22 @@
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
+import { LOGO } from "./../Assets/svg";
 
 function Footer() {
   return (
     <Box component="footer" padding="2rem 1rem">
+      <Logo />
       <KeepUpToDate />
     </Box>
   );
 }
+
+const Logo = () => (
+  <Box component="a" href="/" display="block" marginBottom={1.5}>
+    {LOGO}
+  </Box>
+);
 
 const KeepUpToDate = () => {
   return (
@@ -18,7 +26,7 @@ const KeepUpToDate = () => {
         Join our newsletter for regular updates. <strong>No spam ever</strong>
       </Typography>
 
-      <Box component="form" marginTop={2}>
+      <Box component="form" marginTop={3}>
         <Typography fontSize="0.8rem" color="#b2bac2">
           Enter your email:
         </Typography>
