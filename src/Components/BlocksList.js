@@ -4,6 +4,7 @@ import MUIFeatures from "./MUIFeatures";
 import Sponsors from "./Sponsors";
 import PeopleComments from "./PeopleComments";
 import StartNow from "./StartNow";
+import ProductionReadyComponents from "./ProductionReadyComponents";
 
 function BlocksList() {
   const blockData = [
@@ -35,6 +36,7 @@ function BlocksList() {
         </>
       ),
       bg: "#001e3c",
+      children: <ProductionReadyComponents />,
     },
     {
       bg: "#132f4c",
