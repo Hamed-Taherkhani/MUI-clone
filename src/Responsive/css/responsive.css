@@ -1,0 +1,109 @@
+@media screen and (min-width: 550px) {
+  .Get-started-root {
+    flex-direction: row !important;
+  }
+}
+@media screen and (min-width: 600px) {
+  .block {
+    padding: 2rem !important;
+  }
+  .root-footer {
+    padding: 2rem !important;
+  }
+  .root-main .famous-company-used-mui .list .item {
+    width: 30% !important;
+  }
+  .People-comments-component .Comments-component {
+    height: 300px;
+  }
+  .Mui-features-list,
+.diamond-section .MuiList-root,
+.gold-section .MuiList-root {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .Mui-features-list .MuiListItem-root,
+.diamond-section .MuiList-root .MuiListItem-root,
+.gold-section .MuiList-root .MuiListItem-root {
+    width: calc(50% - 12px);
+  }
+  .Mui-features-list .MuiListItem-root > .MuiPaper-root,
+.diamond-section .MuiList-root .MuiListItem-root > .MuiPaper-root,
+.gold-section .MuiList-root .MuiListItem-root > .MuiPaper-root {
+    height: 100%;
+  }
+  .Start-now-root .links-list {
+    flex-direction: row;
+  }
+  .Production-ready-components {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Production-ready-components > .MuiBox-root {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .root-main .famous-company-used-mui .list {
+    align-items: center;
+    gap: 50px;
+  }
+  .root-main .famous-company-used-mui .list .item {
+    width: -webkit-min-content !important;
+    width: -moz-min-content !important;
+    width: min-content !important;
+  }
+  .Mui-features-list,
+.Production-ready-components {
+    flex-wrap: nowrap;
+  }
+  .People-comments-component {
+    display: flex;
+    gap: 30px;
+    padding: 1rem 0 6rem;
+  }
+  .People-comments-component > .MuiList-root, .People-comments-component > .Comments-component {
+    flex: 1;
+  }
+  .People-comments-component > .MuiList-root {
+    position: relative;
+    top: 75px;
+  }
+  .diamond-section .MuiList-root .MuiListItem-root,
+.gold-section .MuiList-root .MuiListItem-root {
+    width: calc(33.33% - 16px);
+  }
+  .root-footer .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .root-footer .container .footer-links-list {
+    width: 50%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .root-footer .container .footer-links-list > .MuiBox-root {
+    width: auto;
+  }
+  .root-footer .Copyright-social-media-root {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__,
+.block,
+.root-footer {
+    padding: 0 calc(50% - 600px) !important;
+  }
+  .block,
+.root-footer {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .root-footer {
+    padding-bottom: 0 !important;
+  }
+}/*# sourceMappingURL=responsive.css.map */

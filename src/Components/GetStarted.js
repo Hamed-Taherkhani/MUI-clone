@@ -61,7 +61,11 @@ function GetStarted({ sx }) {
         </Alert>
       </Snackbar>
 
-      <Button endIcon={<NavigateNextRoundedIcon />} variant="contained">
+      <Button
+        endIcon={<NavigateNextRoundedIcon />}
+        variant="contained"
+        sx={{ whiteSpace: "nowrap" }}
+      >
         Get started
       </Button>
 

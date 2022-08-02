@@ -6,10 +6,11 @@ import Card from "./Card";
 
 function StartNow() {
   return (
-    <Box>
+    <Box className="Start-now-root">
       <GetStarted sx={{ padding: "1rem 0 3rem" }} />
 
       <Box
+        className="links-list"
         display="flex"
         flexDirection="column"
         gap={2}

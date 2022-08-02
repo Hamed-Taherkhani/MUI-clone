@@ -11,10 +11,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 function Footer() {
   return (
-    <Box component="footer" padding="2rem 1rem">
-      <Logo />
-      <KeepUpToDate />
-      <Links />
+    <Box component="footer" className="root-footer" padding="2rem 1rem">
+      <div className="container">
+        <div>
+          <Logo />
+          <KeepUpToDate />
+        </div>
+        <Links />
+      </div>
       <CopyRightAndSocialMedia />
     </Box>
   );
@@ -177,6 +181,7 @@ const Links = () => {
 
   return (
     <Box
+      className="footer-links-list"
       component="ul"
       padding=" 1rem 0"
       marginTop={3}
@@ -222,46 +227,46 @@ const CopyRightAndSocialMedia = () => {
   ];
 
   return (
-    <Box>
-      <Box component="hr" borderColor="#b2bac230" />
+    <Box
+      className="Copyright-social-media-root"
+      padding="2rem 0"
+      borderTop="1px solid #b2bac230"
+    >
+      <Typography color="#b2bac2" fontSize="0.9rem" paddingBottom={2}>
+        Copyright © 2022 Material UI SAS.
+      </Typography>
 
-      <Box padding="2rem 0">
-        <Typography color="#b2bac2" fontSize="0.9rem" paddingBottom={2}>
-          Copyright © 2022 Material UI SAS.
-        </Typography>
+      <LinksList
+        links={socialMediaLinks}
+        sx={{
+          ul: {
+            display: "flex",
+            alignItems: "flex-start",
+            gap: 3,
 
-        <LinksList
-          links={socialMediaLinks}
-          sx={{
-            ul: {
-              display: "flex",
-              alignItems: "flex-start",
-              gap: 3,
+            li: {
+              width: "min-content",
 
-              li: {
-                width: "min-content",
+              a: {
+                borderRadius: "50%",
+                padding: "5px",
+                transition: "200ms ease",
 
-                a: {
-                  borderRadius: "50%",
-                  padding: "5px",
-                  transition: "200ms ease",
+                ".MuiSvgIcon-root": {
+                  fill: "#fff",
+                  width: "20px",
+                  height: "20px",
+                },
 
-                  ".MuiSvgIcon-root": {
-                    fill: "#fff",
-                    width: "20px",
-                    height: "20px",
-                  },
-
-                  "&:hover": {
-                    backgroundColor: "#1e49765e",
-                    transform: "scale(0.94)",
-                  },
+                "&:hover": {
+                  backgroundColor: "#1e49765e",
+                  transform: "scale(0.94)",
                 },
               },
             },
-          }}
-        />
-      </Box>
+          },
+        }}
+      />
     </Box>
   );
 };

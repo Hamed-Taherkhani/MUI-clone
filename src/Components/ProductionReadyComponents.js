@@ -74,18 +74,17 @@ function ProductionReadyComponents() {
     ],
   };
 
+  const borderStyle = { border: "1px solid rgba(194, 224, 255, 0.08)" };
+
   return (
     <Box
       border="1px solid rgba(194, 224, 255, 0.08)"
       borderRadius="10px"
       overflow="hidden"
+      className="Production-ready-components"
     >
-      <TabsContainer tabs={sizes.tabs} panels={sizes.panels} />
-      <TabsContainer
-        sx={{ border: "1px solid rgba(194, 224, 255, 0.08)" }}
-        tabs={alert.tabs}
-        panels={alert.panels}
-      />
+      <TabsContainer tabs={sizes.tabs} panels={sizes.panels} sx={borderStyle} />
+      <TabsContainer tabs={alert.tabs} panels={alert.panels} sx={borderStyle} />
       <TabsContainer
         sx={{
           ".MuiInput-root, .MuiInputLabel-root": {
@@ -95,6 +94,7 @@ function ProductionReadyComponents() {
             {
               borderColor: "#fff",
             },
+          ...borderStyle,
         }}
         tabs={textField.tabs}
         panels={textField.panels}

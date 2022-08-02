@@ -1,0 +1,148 @@
+@media screen and (min-width: 550px) {
+  .Get-started-root {
+    flex-direction: row !important;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  $padding: 2rem !important;
+
+  .block {
+    padding: $padding;
+  }
+
+  .root-footer {
+    padding: $padding;
+  }
+
+  .root-main {
+    .famous-company-used-mui {
+      .list {
+        .item {
+          width: 30% !important;
+        }
+      }
+    }
+  }
+
+  .People-comments-component {
+    .Comments-component {
+      height: 300px;
+    }
+  }
+
+  .Mui-features-list,
+  .diamond-section .MuiList-root,
+  .gold-section .MuiList-root {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+
+    .MuiListItem-root {
+      width: calc(50% - 12px);
+
+      & > .MuiPaper-root {
+        height: 100%;
+      }
+    }
+  }
+
+  .Start-now-root {
+    .links-list {
+      flex-direction: row;
+    }
+  }
+
+  .Production-ready-components {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > .MuiBox-root {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .root-main {
+    .famous-company-used-mui {
+      .list {
+        align-items: center;
+        gap: 50px;
+
+        .item {
+          width: min-content !important;
+        }
+      }
+    }
+  }
+
+  .Mui-features-list,
+  .Production-ready-components {
+    flex-wrap: nowrap;
+  }
+
+  .People-comments-component {
+    display: flex;
+    gap: 30px;
+    padding: 1rem 0 6rem;
+
+    & > .MuiList-root,
+    & > .Comments-component {
+      flex: 1;
+    }
+
+    & > .MuiList-root {
+      position: relative;
+      top: 75px;
+    }
+  }
+
+  .diamond-section .MuiList-root,
+  .gold-section .MuiList-root {
+    .MuiListItem-root {
+      width: calc(33.33% - 16px);
+    }
+  }
+
+  .root-footer {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+
+      .footer-links-list {
+        width: 50%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        & > .MuiBox-root {
+          width: auto;
+        }
+      }
+    }
+
+    .Copyright-social-media-root {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__,
+  .block,
+  .root-footer {
+    padding: 0 calc(50% - 600px) !important;
+  }
+
+  .block,
+  .root-footer {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .root-footer {
+    padding-bottom: 0 !important;
+  }
+}

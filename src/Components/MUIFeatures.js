@@ -32,7 +32,7 @@ function MUIFeatures() {
 
   return (
     <List
-      className="mui-features-list"
+      className="Mui-features-list"
       sx={{
         display: "flex",
         flexDirection: "column",
