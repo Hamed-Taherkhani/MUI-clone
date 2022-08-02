@@ -1,4 +1,4 @@
-import { Button, List, ListItem, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import LinksList from "../Components/LinksList";
@@ -201,23 +201,23 @@ const CopyRightAndSocialMedia = () => {
   const socialMediaLinks = [
     {
       icon: <GitHubIcon />,
-      path: "",
+      path: "https://github.com/Hamed-Taherkhani/",
     },
     {
       icon: <LinkedInIcon />,
-      path: "",
+      path: "https://www.linkedin.com/in/hamed-taherkhani-217910210/",
     },
     {
       icon: <AlternateEmailIcon />,
-      path: "",
+      path: "mailto:hamed.thni@gmail.com",
     },
     {
       icon: <InstagramIcon />,
-      path: "",
+      path: "https://instagram.com/_hamedtaherkhani_/",
     },
     {
       icon: <TelegramIcon />,
-      path: "",
+      path: "https://t.me/Hamed_tahi/",
     },
   ];
 

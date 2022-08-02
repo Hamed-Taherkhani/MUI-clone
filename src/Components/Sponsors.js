@@ -95,17 +95,10 @@ function Sponsors() {
     ];
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 5,
-        marginTop: 5,
-      }}
-    >
+    <Box display="flex" flexDirection="column" gap={5} marginTop={5}>
       <Box className="diamond-section">
         <Typography
-          fontSize="1.5rem"
+          fontSize="1.8rem"
           fontWeight="500"
           color="rgb(51, 153, 255)"
         >
@@ -134,7 +127,7 @@ function Sponsors() {
       </Box>
 
       <Box className="gold-section">
-        <Typography fontSize="1.5rem" fontWeight="500" color="rgb(222, 165, 0)">
+        <Typography fontSize="1.8rem" fontWeight="500" color="rgb(222, 165, 0)">
           Gold
         </Typography>
         <List

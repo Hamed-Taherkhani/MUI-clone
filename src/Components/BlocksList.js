@@ -9,16 +9,6 @@ import ProductionReadyComponents from "./ProductionReadyComponents";
 function BlocksList() {
   const blockData = [
     {
-      title: "Products",
-      description: (
-        <>
-          Every component you need is <strong>ready for production</strong>
-        </>
-      ),
-      summary:
-        "Build at an accelerated pace without sacrificing flexibility or control.",
-    },
-    {
       title: "Why build with MUI ?",
       description: (
         <>

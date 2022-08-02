@@ -1,24 +1,4 @@
 .root-main {
-  .introduction {
-    padding: 0 1rem;
-    height: calc(100vh - 55px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .container {
-      max-width: 500px;
-
-      .text {
-        margin-bottom: 1rem;
-
-        h1 {
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-
   .famous-company-used-mui {
     padding: 0 1rem 2rem;
 

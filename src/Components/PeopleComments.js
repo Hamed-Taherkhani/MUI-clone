@@ -158,7 +158,7 @@ const Comments = () => {
                 width: "10px",
                 height: "10px",
                 borderRadius: "50%",
-                background: "#99CCF3",
+                background: "#99ccf33b",
               },
             },
           }}
